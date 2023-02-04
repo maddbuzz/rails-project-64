@@ -1,6 +1,7 @@
 install:
 	gem install slim_lint
 	bin/setup
+	RAILS_ENV=production bin/rails assets:precompile
 
 without-production:
 	bundle config set --local without 'production'

@@ -1,6 +1,6 @@
 install:
-	bin/setup
 	gem install slim_lint
+	bin/setup
 
 without-production:
 	bundle config set --local without 'production'

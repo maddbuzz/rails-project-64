@@ -88,3 +88,5 @@ gem 'slim-rails'
 
 gem 'sentry-rails'
 gem 'sentry-ruby'
+
+gem 'devise'

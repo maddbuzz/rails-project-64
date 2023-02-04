@@ -63,7 +63,6 @@ group :development, :test do
 
   gem 'faker'
   gem 'rubocop-rails', require: false
-  gem 'slim_lint'
 end
 
 group :development do

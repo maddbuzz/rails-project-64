@@ -1,4 +1,5 @@
 install:
+	gem install slim_lint
 	bin/setup
 
 without-production:

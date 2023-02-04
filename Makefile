@@ -1,5 +1,5 @@
 install:
-	bundle install
+	bin/setup
 
 without-production:
 	bundle config set --local without 'production'

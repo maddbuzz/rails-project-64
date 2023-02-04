@@ -2,6 +2,7 @@ require: rubocop-rails
 
 AllCops:
   Exclude:
+    - "db/**"
     - bin/bundle
     - "**/vendor/**/*"
     - "**/*.gemspec"

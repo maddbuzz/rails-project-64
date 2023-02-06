@@ -84,6 +84,7 @@ group :test do
   gem 'webdrivers'
 end
 
+gem 'simple_form'
 gem 'slim-rails'
 
 gem 'sentry-rails'

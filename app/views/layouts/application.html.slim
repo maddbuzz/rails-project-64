@@ -11,10 +11,23 @@ html
 
   body.d-flex.flex-column.h-100
 
-    = render 'layouts/shared/nav'
-    = render 'layouts/shared/flash'
+    header
+      .container.mb-2
+        .d-flex.flex-wrap.align-items-center.py-2.border-bottom
+          = render 'layouts/shared/nav'
+          / = render 'layouts/shared/fixed_nav_example'
 
-    = yield
+    main.flex-shrink-0
+      / .container
+      .container.my-4
 
-    / p class="notice" = notice
-    / p class="alert" = alert
+        = render 'layouts/shared/flash'
+
+        = yield
+
+        / p.notice
+        /   = notice
+        / p.alert
+        /   = alert
+
+    / = render 'layouts/shared/footer'

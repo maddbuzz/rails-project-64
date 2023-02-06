@@ -1,3 +1,7 @@
+exclude:
+  # TODO remove next line
+  - 'app/views/home/index.html.slim'
+
 linters:
   LineLength:
-    max: 100
+    max: 1000

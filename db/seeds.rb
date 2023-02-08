@@ -8,4 +8,13 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
+Category.delete_all
 categories = Category.create([{ name: 'category_1' }, { name: 'category_2' }])
+
+User.create email: 'john@gmail.com', password: 'topsecret', password_confirmation: 'topsecret'
+users = User.all
+
+Post.delete_all
+10.times do
+  pp Post.create({ title: Faker::Lorem.unique.sentence, body: Faker::Lorem.unique.paragraph, category: categories.sample, creator: users.sample })
+end

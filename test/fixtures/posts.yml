@@ -1,9 +1,11 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
 one:
-  title: MyString
-  body: MyText
+  title: Faker::Lorem.unique.sentence
+  body: Faker::Lorem.unique.paragraph
+  creator: current_user
+  category: one
 
-two:
-  title: MyString
-  body: MyText
+with_like:
+  title: Faker::Lorem.unique.sentence
+  body: Faker::Lorem.unique.paragraph
+  creator: current_user
+  category: two

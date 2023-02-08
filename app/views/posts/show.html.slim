@@ -1,0 +1,13 @@
+ol.breadcrumb
+  li.breadcrumb-item = link_to t('pages.posts.show.tags.root'), root_path
+  li.breadcrumb-item.active
+    = @post.category.name
+
+article.mt-4
+  h1.mb-lg-5 = @post.title
+  = simple_format @post.body
+
+  div class='d-flex justify-content-between mt-5'
+    div
+      span.me-2 = @post.creator.email
+      span = time_ago_in_words @post.created_at

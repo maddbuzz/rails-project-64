@@ -8,7 +8,7 @@ without-production:
 
 install-without-production: without-production install
 
-start-dev:
+dev-start:
 	RAILS_ENV=development bin/rails assets:precompile
 	bin/rails s -p 3000 -b "127.0.0.1"
 

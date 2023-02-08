@@ -1,6 +1,9 @@
 # frozen_string_literal: true
 
 class User < ApplicationRecord
+  # has_many :posts, dependent: :restrict_with_exception, inverse_of: :creator
+  has_many :posts, inverse_of: :creator
+
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,

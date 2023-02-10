@@ -90,4 +90,5 @@ gem 'slim-rails'
 gem 'sentry-rails'
 gem 'sentry-ruby'
 
+gem 'ancestry'
 gem 'devise'

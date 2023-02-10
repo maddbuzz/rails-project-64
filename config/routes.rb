@@ -1,10 +1,14 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  resources :posts
   devise_for :users
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  # Defines the root path route ("/")
-  root to: 'home#index'
+  root 'home#index'
+
+  resources :posts, only: %i[show new create] do
+    scope module: :posts do
+      # resources :likes, only: %i[create destroy]
+      resources :comments, only: :create
+    end
+  end
 end

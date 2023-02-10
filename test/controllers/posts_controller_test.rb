@@ -19,6 +19,11 @@ module PostsControllerTest
       }
     end
 
+    test 'should get root' do
+      get root_url
+      assert_response :success
+    end
+
     test 'should get new' do
       get new_post_url
       assert_response :success

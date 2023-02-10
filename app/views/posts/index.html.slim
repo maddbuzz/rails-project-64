@@ -1,11 +1,16 @@
-p style='color: green' = notice
+h1 Коллективный блог
 
-h1 Posts
-
-#posts
+div
   - @posts.each do |post|
-    == render post
-    p
-      = link_to 'Show this post', post
+    article.card.mb-3
+      .card-body
+        h2.h5
+          = link_to post.title,
+            post,
+            class: 'link-dark text-decoration-none'
+        p.mb-2 = post.body.truncate_words 30
 
-= link_to 'New post', new_post_path
+        .small.text-muted
+          / span.me-2 = t(:text, scope: 'pages.posts.likes', count: post.likes.size)
+          span.me-2 = time_ago_in_words post.created_at
+          span = post.creator.email

@@ -3,6 +3,10 @@
 class PostsController < ApplicationController
   before_action :authenticate_user!, only: %i[new create]
 
+  def index
+    @posts = Post.includes(:creator).by_recently_created
+  end
+
   def show
     @post = Post.find params[:id]
 

@@ -34,5 +34,6 @@ div
         p.mb-3 = comment.content
         = render('posts/comments/nested_comment', nested_comments:)
 
-      hr.my-2
-      = render 'posts/comments/reply_button', comment:, custom_class: 'p-4 pb-2'
+      - if current_user.present?
+        hr.my-2
+        = render 'posts/comments/reply_button', comment:, custom_class: 'p-4 pb-2'

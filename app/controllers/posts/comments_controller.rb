@@ -4,6 +4,10 @@ module Posts
   class CommentsController < ApplicationController
     before_action :authenticate_user!
 
+    def new
+      @comment = PostComment.new
+    end
+
     def create
       @comment = resource_post.comments.build comment_params
       @comment.user = current_user
@@ -16,10 +20,6 @@ module Posts
         # redirect_to resource_post, status: :unprocessable_entity
         render :new, status: :unprocessable_entity
       end
-    end
-
-    def new
-      @comment = PostComment.new
     end
 
     private

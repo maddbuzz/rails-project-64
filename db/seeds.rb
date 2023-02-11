@@ -9,7 +9,7 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 Category.delete_all
-categories = Category.create([{ name: 'category_1' }, { name: 'category_2' }])
+categories = Category.create([{ name: 'Категория 1' }, { name: 'Категория 2' }])
 
 User.create email: 'john@gmail.com', password: 'topsecret', password_confirmation: 'topsecret'
 users = User.all

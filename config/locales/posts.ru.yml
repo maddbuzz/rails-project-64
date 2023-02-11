@@ -1,0 +1,26 @@
+ru:
+  posts:
+    form:
+      submit_button: Создать статью
+    index:
+      title: Коллективный блог
+    new:
+      title: Новый пост
+    show:
+      all_posts: Все посты
+      comments: Комментарии
+    create:
+      success: Пост создан
+
+    comments:
+      form:
+        submit_button: Создать комментарий
+      new:
+        title: Новый комментарий
+      create:
+        success: Комментарий создан
+      reply_button:
+        link_text: ответить
+        unauthorized:
+          text_html: Requires ???
+          link_text: Sign in ???

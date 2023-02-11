@@ -24,7 +24,7 @@ class PostsController < ApplicationController
     @post = current_user.posts.build post_params
 
     if @post.save
-      redirect_to root_path, notice: t('.')
+      redirect_to root_path, notice: t('.success')
     else
       render :new, status: :unprocessable_entity
     end

@@ -1,5 +1,6 @@
 ol.breadcrumb
-  li.breadcrumb-item = link_to 'Все посты', root_path
+  li.breadcrumb-item
+    = link_to t('.all_posts'), root_path
   li.breadcrumb-item.active
     = @post.category.name
 
@@ -14,13 +15,13 @@ article.mt-4
     / div = render 'posts/likes/button', post: @post, like: @user_like
 
 div
-  p.lead.mb-3 Комментарии
+  p.lead.mb-3 = t('.comments')
 
   - if current_user.present?
     = render( \
       'posts/comments/form',
       comment: @new_comment,
-      url: post_comments_path(@post),
+      url: post_comments_url(@post),
       custom_class: 'mb-4' \
     )
 

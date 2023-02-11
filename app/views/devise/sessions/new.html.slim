@@ -1,4 +1,4 @@
-h2 Войти
+h2 = t('.sign_in')
 
 /= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
 = simple_form_for resource, url: session_path(resource_name), data: { turbo: false } do |f|
@@ -15,6 +15,6 @@ h2 Войти
     = f.input :remember_me, as: :boolean if devise_mapping.rememberable?
 
   .form-actions
-    = f.button :submit, 'Войти', class: 'btn btn-success mt-4 btn-block'
+    = f.button :submit, t('.sign_in'), class: 'btn btn-success mt-4 btn-block'
 
 = render 'devise/shared/links'

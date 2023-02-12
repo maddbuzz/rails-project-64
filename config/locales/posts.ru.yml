@@ -19,7 +19,3 @@ ru:
         success: Комментарий создан
       reply_button:
         link_text: ответить
-
-        unauthorized:
-          text_html: Requires ???
-          link_text: Sign in ???

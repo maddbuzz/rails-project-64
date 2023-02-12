@@ -4,21 +4,14 @@ module Posts
   class CommentsController < ApplicationController
     before_action :authenticate_user!
 
-    def new
-      @comment = PostComment.new
-    end
-
     def create
       @comment = resource_post.comments.build comment_params
       @comment.user = current_user
 
       if @comment.save
-        # redirect_to resource_post, notice: t('.')
-        redirect_to @resource_post, notice: t('.success')
+        redirect_to resource_post, notice: t('.success')
       else
-        # flash[:alert] = "#{t(:text, scope: 'posts.comments')} #{@comment.errors.messages[:content].first}"
-        # redirect_to resource_post, status: :unprocessable_entity
-        render :new, status: :unprocessable_entity
+        redirect_to resource_post, alert: @comment.errors.full_messages.first
       end
     end
 

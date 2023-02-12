@@ -5,7 +5,7 @@
   .form-inputs
     = f.association :category
     = f.input :title
-    = f.input :body
+    = f.input :body, input_html: { rows: 10 }
 
   .form-actions
     = f.button :submit, t('.submit_button'), class: 'btn-primary'

@@ -1,9 +1,0 @@
-h1 = t('.title')
-
-- if current_user.present?
-    = render( \
-      'posts/comments/form',
-      comment: @comment,
-      url: post_comments_url(@resource_post),
-      custom_class: 'mb-4' \
-    )

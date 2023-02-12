@@ -12,7 +12,6 @@
 
 # Use this setup block to configure all options available in SimpleForm.
 
-# rubocop:disable Metrics/BlockLength
 SimpleForm.setup do |config|
   # Default class for buttons
   config.button_class = 'btn'
@@ -365,4 +364,3 @@ SimpleForm.setup do |config|
     select: :vertical_select
   }
 end
-# rubocop:enable Metrics/BlockLength

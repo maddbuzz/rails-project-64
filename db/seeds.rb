@@ -16,5 +16,5 @@ users = User.all
 
 Post.delete_all
 10.times do
-  pp Post.create({ title: Faker::Lorem.unique.sentence, body: Faker::Lorem.unique.paragraph, category: categories.sample, creator: users.sample })
+  Post.create({ title: Faker::Lorem.unique.sentence, body: Faker::Lorem.unique.paragraph, category: categories.sample, creator: users.sample })
 end

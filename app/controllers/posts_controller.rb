@@ -9,9 +9,7 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find params[:id]
-
-    # @user_like = @post.find_like(current_user) if current_user
-
+    @user_like = @post.find_like(current_user) if current_user
     @comments = @post.comments.includes(:user).arrange
     @new_comment = PostComment.new
   end

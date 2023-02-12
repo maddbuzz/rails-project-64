@@ -4,6 +4,7 @@ ru:
       submit_button: Создать статью
     index:
       title: Коллективный блог
+      likes: "Понравилось: %{count}"
     new:
       title: Новый пост
     show:

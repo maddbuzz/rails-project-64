@@ -1,14 +1,3 @@
-/ - if flash.any?
-  .container.my-2
-    - flash.each do |_type, msg|
-      .alert.alert-info
-        = msg
-
-- alert_types = { \
-  notice: 'alert-info',
-  alert: 'alert-danger' \
-}
-
 - flash.each do |type, message|
-  div class="alert #{alert_types.fetch(type.to_sym, "alert-#{type}")}"
+  div[class=get_alert_class(type)]
     = message

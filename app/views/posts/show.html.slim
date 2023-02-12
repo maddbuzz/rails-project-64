@@ -12,7 +12,7 @@ article.mt-4
     div
       span.me-2 = @post.creator.email
       span = time_ago_in_words @post.created_at
-    / div = render 'posts/likes/button', post: @post, like: @user_like
+    div = render 'posts/likes/button', post: @post, like: @user_like
 
 div
   p.lead.mb-3 = t('.comments')

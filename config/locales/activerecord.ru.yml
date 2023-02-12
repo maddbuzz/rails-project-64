@@ -18,6 +18,7 @@ ru:
         user:
           attributes:
             email:
+              taken: 'уже занят'
               blank: 'не может быть пустым'
               invalid: 'имеет неверное значение'
             password:

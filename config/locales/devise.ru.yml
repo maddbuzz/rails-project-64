@@ -3,6 +3,7 @@
 ru:
   devise:
     failure:
+      already_authenticated: "Вы уже вошли в систему."
       invalid: 'Неправильный %{authentication_keys} или пароль.'
       not_found_in_database: 'Неправильный %{authentication_keys} или пароль.'
       unauthenticated: 'Сначала необходимо войти в систему или зарегистрироваться.'

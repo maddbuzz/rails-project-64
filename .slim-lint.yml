@@ -1,6 +1,6 @@
 exclude:
   # TODO remove next line
-  - 'app/views/home/index.html.slim'
+  # - 'app/views/home/index.html.slim'
 
 linters:
   LineLength:

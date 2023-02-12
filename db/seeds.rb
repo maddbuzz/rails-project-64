@@ -8,7 +8,8 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-Category.create([{ name: 'Категория 1' }, { name: 'Категория 2' }]) unless Category.count
+Category.create([{ name: 'Правда' }, { name: 'Истина' }]) unless Category.count
+categories = Category.all
 
 User.create(email: 'john@gmail.com', password: 'topsecret', password_confirmation: 'topsecret') unless User.count
 users = User.all

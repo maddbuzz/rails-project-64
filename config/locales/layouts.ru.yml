@@ -1,8 +1,8 @@
 ru:
   layouts:
-    application:
-      title: Коллективный блог
     shared:
+      head:
+        title: Коллективный блог
       nav:
         logo: Логотип
         new_post: Новый пост

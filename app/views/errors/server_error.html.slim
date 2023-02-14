@@ -1,4 +1,2 @@
-.dialog
-  div
-    h1 We're sorry, but something went wrong.
-  p If you are the application owner check the logs for more information
+= render partial: 'show_error',
+  locals: { header: t('.header'), title: t('.title'), text: t('.text') }

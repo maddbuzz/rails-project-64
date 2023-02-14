@@ -12,22 +12,11 @@ html
   body.d-flex.flex-column.h-100
 
     header
-      .container.mb-2
-        .d-flex.flex-wrap.align-items-center.py-2.border-bottom
-          = render 'layouts/shared/nav'
-          / = render 'layouts/shared/fixed_nav_example'
+      = render 'layouts/shared/nav'
 
     main.flex-shrink-0
-      / .container
       .container.my-4
 
         = render 'layouts/shared/flash'
 
         = yield
-
-        / p.notice
-        /   = notice
-        / p.alert
-        /   = alert
-
-    / = render 'layouts/shared/footer'

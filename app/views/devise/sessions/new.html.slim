@@ -1,6 +1,5 @@
-h2 = t('.sign_in')
+h2 = t('simple_form.sign_in.title')
 
-/= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
 = simple_form_for resource, url: session_path(resource_name), data: { turbo: false } do |f|
   = f.error_notification
 
@@ -15,6 +14,6 @@ h2 = t('.sign_in')
     = f.input :remember_me, as: :boolean if devise_mapping.rememberable?
 
   .form-actions
-    = f.button :submit, t('.sign_in'), class: 'btn btn-success mt-4 btn-block'
+    = f.button :submit, t('simple_form.sign_in.submit_button'), class: 'btn btn-success mt-4 btn-block'
 
 = render 'devise/shared/links'

@@ -7,12 +7,21 @@ ru:
       mark: '*'
     error_notification:
       default_message: Проверьте введенные данные
-    # placeholders:
-    #   post:
-    #     title: Enter post title
-    #     body: Enter post body
-    #   post_comment:        
-    #     content: Enter comment content
-    hints:
-      password:
-        minimum_password_length: (минимум %{count} знаков)
+
+    sign_up:
+      title: Регистрация
+      hints:
+        password:
+          minimum_password_length: (минимум %{count} знаков)
+      submit_button: Регистрация
+    sign_in:
+      title: Войти
+      submit_button: Войти
+    forgot_password:
+      title: Забыли пароль?
+      submit_button: Выслать новый пароль
+    post:
+      title: Новый пост
+      submit_button: Опубликовать
+    comment:
+      submit_button: Оставить комментарий

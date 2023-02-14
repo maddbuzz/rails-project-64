@@ -17,7 +17,6 @@ article.mt-4
 div
   p.lead.mb-3 = t('.comments')
 
-  / - if current_user.present?
   = render( \
     'posts/comments/form',
     comment: @new_comment,

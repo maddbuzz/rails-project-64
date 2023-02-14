@@ -18,6 +18,7 @@ ru:
         user:
           attributes:
             email:
+              not_found: 'не найден'
               taken: 'уже занят'
               blank: 'не может быть пустым'
               invalid: 'имеет неверное значение'

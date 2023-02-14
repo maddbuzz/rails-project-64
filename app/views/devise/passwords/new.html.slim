@@ -1,6 +1,5 @@
-h2 Forgot your password?
+h2 = t('simple_form.forgot_password.title')
 
-/= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f|
 = simple_form_for resource, url: password_path(resource_name), html: { method: :post }, data: { turbo: false } do |f|
   = f.error_notification
 
@@ -12,7 +11,7 @@ h2 Forgot your password?
 
   .form-actions
     = f.button :submit,
-     'Send me reset password instructions',
+      t('simple_form.forgot_password.submit_button'),
       class: 'btn btn-success mt-4 btn-block'
 
 = render 'devise/shared/links'

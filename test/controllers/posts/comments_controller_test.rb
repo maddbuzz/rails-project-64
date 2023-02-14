@@ -42,7 +42,6 @@ module CommentsControllerTest
       comment = PostComment.find_by wrong_attrs
 
       assert { comment.nil? }
-      # assert_response :unprocessable_entity
     end
 
     test 'should create nested comment' do

@@ -1,7 +1,7 @@
 ru:
   layouts:
     application:
-      title: RailsProject64
+      title: Коллективный блог
     shared:
       nav:
         logo: Логотип

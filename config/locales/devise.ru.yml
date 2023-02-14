@@ -1,5 +1,3 @@
-# Additional translations at https://github.com/heartcombo/devise/wiki/I18n
-
 ru:
   devise:
     failure:
@@ -7,13 +5,17 @@ ru:
       invalid: 'Неправильный %{authentication_keys} или пароль.'
       not_found_in_database: 'Неправильный %{authentication_keys} или пароль.'
       unauthenticated: 'Сначала необходимо войти в систему или зарегистрироваться.'
+    passwords:
+      send_instructions: Через несколько минут вы получите электронное письмо с инструкциями по сбросу пароля
     registrations:
       signed_up: "Добро пожаловать! Вы успешно зарегистрировались."
-      new:
-        sign_up: Регистрация
     sessions:
       signed_in: "Выполнен вход."
       signed_out: "Выполнен выход."
       already_signed_out: "Уже выполнен выход."
-      new:
+
+    shared:
+      links:
         sign_in: Войти
+        sign_up: Регистрация
+        forgot_password: Забыли пароль?
